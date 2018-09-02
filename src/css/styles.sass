@@ -7,7 +7,8 @@
 $background: url('../img/bg-main.jpg')
 $intro: url('../img/top.jpg')
 $image1: url('../img/example.jpg')
-$image2: url('../img/example-2.jpg')
+$image2: url('../img/stockphoto.jpg')
+$image3: url('../img/example-2.jpg')
 
 body, html
   min-height: 100%
@@ -27,6 +28,23 @@ body
     width: 100%
     height: 100%
     background: rgba(0,0,0,0.8)
+    z-index: -1
+
+.google
+  display: inline-block
+  overflow: hidden
+  background: url(../img/Get_it_on_Google_play.svg) no-repeat
+  width: 228px
+  height: 66px
+  background-size: contain
+  
+.itunes
+  display: inline-block
+  overflow: hidden
+  background: url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-gb/appstore-lrg.svg) no-repeat
+  width: 228px
+  height: 66px
+  background-size: contain
     
 .container
   background: #25272C
@@ -84,13 +102,17 @@ section
     min-height: 480px
     margin: 40px
     background-position: center center
-    background-size: cover
+    background-size: contain
+    background-repeat: no-repeat
     
     &.image1
       background-image: $image1
       
     &.image2
       background-image: $image2
+
+    &.image3
+      background-image: $image3
   
   .text
     padding: 40px
