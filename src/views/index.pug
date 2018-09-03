@@ -1,15 +1,17 @@
 html
     head
         link(rel="stylesheet", href="css/styles.css")
+        script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+        script(src='js/smooth-scroll.js')
     body
         .container.d-flex.flex-column
             .header.d-flex.flex-column.justify-content-between.align-items-center
                 nav.topmenu.d-flex.justify-content-center
-                    a(href="#about") About
+                    a(href="#about" class="nav-link") About
                     .line.align-self-center
-                    a(href="#rules") Rules
+                    a(href="#rules" class="nav-link") Rules
                     .line.align-self-center
-                    a(href="#howto") Join
+                    a(href="#howto" class="nav-link") Join
                 .server-info.d-flex.align-items-center.flex-column.text-center
                     h1 Pok&eacute;mon Go East Kent
                     a.links-suppressor.join-btn.btn-pill.white(href="https://discordapp.com/invite/vdZMcn3") Join Server
